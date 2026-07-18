@@ -4,221 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Soporte — Adrián Cardín</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #f6f5f2;
-    --fg: #201f1c;
-    --muted: #706c64;
-    --line: #ddd9cf;
-    --accent: #2f5d50;
-    --accent-tint: #e8efec;
-    --font-display: ui-serif, Charter, "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-    --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-    --font-label: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #16181a;
-      --fg: #eceae5;
-      --muted: #9a978f;
-      --line: #2b2e2f;
-      --accent: #6fa593;
-      --accent-tint: #1c2624;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #16181a;
-    --fg: #eceae5;
-    --muted: #9a978f;
-    --line: #2b2e2f;
-    --accent: #6fa593;
-    --accent-tint: #1c2624;
-  }
-  :root[data-theme="light"] {
-    --bg: #f6f5f2;
-    --fg: #201f1c;
-    --muted: #706c64;
-    --line: #ddd9cf;
-    --accent: #2f5d50;
-    --accent-tint: #e8efec;
-  }
-
-  * { box-sizing: border-box; }
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; animation: none !important; }
-  }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: var(--font-body);
-    line-height: 1.55;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  main {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 64px 24px 96px;
-  }
-
-  .eyebrow {
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0 0 14px;
-  }
-
-  h1 {
-    font-family: var(--font-display);
-    font-weight: 500;
-    font-size: 2.1rem;
-    letter-spacing: -0.01em;
-    text-wrap: balance;
-    margin: 0 0 10px;
-  }
-
-  p.lead {
-    color: var(--muted);
-    max-width: 46ch;
-    margin: 0 0 8px;
-    font-size: 1.02rem;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px solid var(--line);
-    margin: 40px 0;
-  }
-
-  h2 {
-    font-family: var(--font-label);
-    font-size: 0.75rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 20px;
-  }
-
-  section + section { margin-top: 48px; }
-
-  .app-row {
-    display: flex;
-    gap: 14px;
-    padding: 16px 0;
-    border-top: 1px solid var(--line);
-  }
-  .app-row:last-child { border-bottom: 1px solid var(--line); }
-
-  .marker {
-    flex: none;
-    width: 9px;
-    height: 9px;
-    margin-top: 7px;
-    border: 1.5px solid var(--accent);
-    border-radius: 2px;
-  }
-
-  .app-row h3 {
-    font-family: var(--font-display);
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin: 0 0 3px;
-  }
-  .app-row p {
-    margin: 0;
-    color: var(--muted);
-    font-size: 0.95rem;
-    max-width: 48ch;
-  }
-
-  details {
-    border-top: 1px solid var(--line);
-    padding: 16px 0;
-  }
-  details:last-child { border-bottom: 1px solid var(--line); }
-
-  summary {
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 16px;
-    font-weight: 600;
-    font-size: 0.98rem;
-  }
-  summary::-webkit-details-marker { display: none; }
-
-  summary .toggle {
-    font-family: var(--font-label);
-    color: var(--accent);
-    flex: none;
-  }
-  details[open] summary .toggle::before { content: "–"; }
-  summary .toggle::before { content: "+"; }
-
-  details p {
-    color: var(--muted);
-    font-size: 0.95rem;
-    max-width: 50ch;
-    margin: 12px 0 0;
-  }
-
-  a {
-    color: var(--accent);
-    text-underline-offset: 3px;
-  }
-  a:focus-visible, summary:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-  }
-
-  .contact {
-    background: var(--accent-tint);
-    border-radius: 10px;
-    padding: 22px 24px;
-    margin-top: 20px;
-  }
-  .contact p {
-    margin: 0;
-    font-size: 0.95rem;
-  }
-  .contact a {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-weight: 500;
-  }
-
-  footer {
-    margin-top: 64px;
-    font-family: var(--font-label);
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
-    color: var(--muted);
-  }
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-support">
 <main>
-  <p class="eyebrow">Soporte</p>
-  <h1>¿En qué puedo ayudarte?</h1>
-  <p class="lead">Apps hechas por Adrián Cardín. Si algo falla, tienes una duda o una idea, escríbeme — abajo tienes el correo.</p>
+  <nav class="lang-switch" data-lang-switch aria-label="Selector de idioma"></nav>
+
+  <p class="eyebrow" data-i18n="support.eyebrow">Soporte</p>
+  <h1 data-i18n="support.h1">¿En qué puedo ayudarte?</h1>
+  <p class="lead" data-i18n="support.lead">Apps hechas por Adrián Cardín. Si algo falla, tienes una duda o una idea, escríbeme — abajo tienes el correo.</p>
 
   <hr>
 
   <section>
-    <h2>Apps</h2>
+    <h2 data-i18n="support.apps.title">Apps</h2>
 
     <div class="app-row">
       <span class="marker"></span>
       <div>
         <h3>Listas compartidas</h3>
-        <p>Listas de tareas y compra, con la opción de compartirlas con otras personas.</p>
+        <p data-i18n="support.apps.app1.desc">Listas de tareas y compra, con la opción de compartirlas con otras personas.</p>
       </div>
     </div>
 
@@ -226,7 +31,7 @@
       <span class="marker"></span>
       <div>
         <h3>Mis Gastos</h3>
-        <p>Control y seguimiento de gastos personales.</p>
+        <p data-i18n="support.apps.app2.desc">Control y seguimiento de gastos personales.</p>
       </div>
     </div>
 
@@ -234,39 +39,43 @@
       <span class="marker"></span>
       <div>
         <h3>Mi Diario</h3>
-        <p>Diario personal privado.</p>
+        <p data-i18n="support.apps.app3.desc">Diario personal privado.</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Preguntas frecuentes</h2>
+    <h2 data-i18n="support.faq.title">Preguntas frecuentes</h2>
 
     <details>
-      <summary>Se me ha cerrado la app o no funciona bien<span class="toggle"></span></summary>
-      <p>Escríbeme indicando el nombre de la app, el modelo de tu dispositivo y qué estabas haciendo cuando ocurrió. Intento responder lo antes posible.</p>
+      <summary><span data-i18n="support.faq.q1">Se me ha cerrado la app o no funciona bien</span><span class="toggle"></span></summary>
+      <p data-i18n="support.faq.a1">Escríbeme indicando el nombre de la app, el modelo de tu dispositivo y qué estabas haciendo cuando ocurrió. Intento responder lo antes posible.</p>
     </details>
 
     <details>
-      <summary>¿Mis datos se comparten con terceros?<span class="toggle"></span></summary>
-      <p>No. Los datos se guardan en tu dispositivo y, si la app lo permite, en tu propia cuenta de iCloud, para que puedas usarlos entre tus dispositivos o compartirlos con quien tú elijas.</p>
+      <summary><span data-i18n="support.faq.q2">¿Mis datos se comparten con terceros?</span><span class="toggle"></span></summary>
+      <p data-i18n="support.faq.a2">No. Los datos se guardan en tu dispositivo y, si la app lo permite, en tu propia cuenta de iCloud, para que puedas usarlos entre tus dispositivos o compartirlos con quien tú elijas.</p>
     </details>
 
     <details>
-      <summary>Tengo una sugerencia o he encontrado un fallo<span class="toggle"></span></summary>
-      <p>Cualquier idea o error que me cuentes ayuda a mejorar la app. Escríbeme al correo de abajo.</p>
+      <summary><span data-i18n="support.faq.q3">Tengo una sugerencia o he encontrado un fallo</span><span class="toggle"></span></summary>
+      <p data-i18n="support.faq.a3">Cualquier idea o error que me cuentes ayuda a mejorar la app. Escríbeme al correo de abajo.</p>
     </details>
   </section>
 
   <section>
-    <h2>Contacto</h2>
+    <h2 data-i18n="support.contact.title">Contacto</h2>
     <div class="contact">
-      <p>Correo directo</p>
+      <p data-i18n="support.contact.label">Correo directo</p>
       <a href="mailto:acardinlozano@gmail.com">acardinlozano@gmail.com</a>
     </div>
   </section>
 
-  <footer>ADRIÁN CARDÍN LOZANO</footer>
+  <footer>
+    <span>ADRIÁN CARDÍN LOZANO</span>
+    <a href="privacidad.html" data-i18n="support.footer.privacyLink">Privacidad →</a>
+  </footer>
 </main>
+<script src="traducciones/i18n.js" defer></script>
 </body>
 </html>
