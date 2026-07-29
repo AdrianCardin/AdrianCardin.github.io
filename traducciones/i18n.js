@@ -126,11 +126,11 @@
       it: "Informativa sulla privacy",
     },
     "privacy.lead": {
-      es: "Aplica a mis apps: Listas compartidas, Mis Gastos y Mi Diario (iOS), y Clipboard+ (macOS).",
-      en: "Applies to my apps: Listas compartidas, Mis Gastos, and Mi Diario (iOS), and Clipboard+ (macOS).",
-      fr: "S'applique à mes applications : Listas compartidas, Mis Gastos et Mi Diario (iOS), et Clipboard+ (macOS).",
-      de: "Gilt für meine Apps: Listas compartidas, Mis Gastos und Mi Diario (iOS), sowie Clipboard+ (macOS).",
-      it: "Si applica alle mie app: Listas compartidas, Mis Gastos e Mi Diario (iOS), e Clipboard+ (macOS).",
+      es: "Aplica a mis apps: Listas compartidas, Gastos+ y Mi Diario (iOS), y Clipboard+ (macOS).",
+      en: "Applies to my apps: Listas compartidas, Gastos+, and Mi Diario (iOS), and Clipboard+ (macOS).",
+      fr: "S'applique à mes applications : Listas compartidas, Gastos+ et Mi Diario (iOS), et Clipboard+ (macOS).",
+      de: "Gilt für meine Apps: Listas compartidas, Gastos+ und Mi Diario (iOS), sowie Clipboard+ (macOS).",
+      it: "Si applica alle mie app: Listas compartidas, Gastos+ e Mi Diario (iOS), e Clipboard+ (macOS).",
     },
     "privacy.updated": {
       es: "Última actualización: 26 de julio de 2026",
